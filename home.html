@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<!----------NAVIGATION BAR-------------------------------------------------------------->
+<body>
+  <div class="nav-wrapper">
+    <div class="left-side">
+      <div class="nav-link-wrapper">
+      </div>
+
+      <div class="nav-link-wrapper active-nav-link">
+        <a href="home.html">Home</a>
+      </div>
+
+      <div class="nav-link-wrapper">
+        <a href="categories.html">Categories</a>
+      </div>
+
+      <div class="nav-link-wrapper">
+        <a href="contactus.html">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="right-side">
+      <div class="brand" id="brand">IDO GOLDSHTIEN</div>
+      <script>
+        document.getElementById("brand").addEventListener("mouseover", mouseOver);
+        document.getElementById("brand").addEventListener("mouseout", mouseOut);
+          
+        function mouseOver() {
+          document.getElementById("brand").style.color = "black";
+        }
+
+        function mouseOut () {
+          document.getElementById("brand").style.color = "lightseagreen";
+        }
+      </script>
+    </div>
+  </div>
+<!----------NAVIGATION BAR-------------------------------------------------------------->
+
+<!----------LEFT SIDE IMAGE------------------------------------------------------------->
+  <div class="content-wrapper">
+    <div class="two-column-wrapper">
+      <div class="profile-image-wrapper">
+        <img id="electronicstore" src="images/ElectronicStore.jpg" >
+      </div>
+<!----------LEFT SIDE IMAGE------------------------------------------------------------->
+
+<!----------RIGHT SIDE TEXT------------------------------------------------------------->
+      <div class="profile-content-wrapper">
+        <h1>&nbsp*Generic Electronics Store*</h1>
+      </br>
+        <h2>&nbspWelcome!</h2>
+        <p>&nbsp&nbsp&nbspThank you for visiting our website!</br>&nbsp&nbsp&nbspWe in *Generic electronics store* 
+           appreciate you taking your time to browse our &nbsp&nbsp&nbspfine selection of curated electronic goods.
+        </p>
+
+        <p>&nbsp&nbsp&nbsp*Generic Electronics Store* is an American big-box store chain headquartered &nbsp&nbsp&nbsp&nbsp&nbspin San Jose, California in Silicon Valley.</br> 
+          &nbsp&nbsp&nbsp*Generic Electronics Store* retailes software, consumer electronics, household &nbsp&nbsp&nbsp&nbsp&nbspappliances, technical books, electronic components, 
+            computer hardware, &nbsp&nbsp&nbsp&nbsp&nbspphones, tablets, office equipment, telecommunications equipment, gaming &nbsp&nbsp&nbsp&nbsp&nbspconsoles and peripherals.</br>
+            &nbsp&nbsp&nbsp*Generic Electronics Store* has an in-store computer repair and custom &nbsp&nbsp&nbsp&nbsp&nbspcomputer building services. </p>
+        <h3>&nbsp&nbsp&nbsp&nbspBranches</h3>
+      </div>
+    <div class="branches">
+        <input type="button" class="button" onclick="changeImage1()" value="New York"></button>
+        <input type="button" class="button" onclick="changeImage2()" value="New Delhi"></button>
+        <input type="button" class="button" onclick="changeImage3()" value="California"></button>
+        <input type="button" class="button" onclick="changeImage4()" value="Reset"></button>
+        <script>
+          function changeImage1() {
+            document.getElementById("electronicstore").src="images/Branch1.jpg"
+          }
+
+          function changeImage2() {
+            document.getElementById("electronicstore").src="images/Branch2.jpg"
+          }
+
+          function changeImage3() {
+            document.getElementById("electronicstore").src="images/Branch3.jpg"
+          }
+
+          function changeImage4() {
+            document.getElementById("electronicstore").src="images/ElectronicStore.jpg"
+          }
+        </script>
+    </div>
+    
+<!----------RIGHT SIDE TEXT------------------------------------------------------------->
+
+    </div>
+  </div>
+</body>
+
+</html>

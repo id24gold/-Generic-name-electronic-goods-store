@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type = "text/javascript">
+    function msgprint() {
+      alert("Form sent successfully");
+    }
+</script>
+</head>
+
+<!----------NAVIGATION BAR-------------------------------------------------------------->
+<body>
+  <div class="nav-wrapper">
+    <div class="left-side">
+      <div class="nav-link-wrapper">
+      </div>
+
+      <div class="nav-link-wrapper">
+        <a href="home.html">Home</a>
+      </div>
+
+      <div class="nav-link-wrapper">
+        <a href="categories.html">Categories</a>
+      </div>
+
+      <div class="nav-link-wrapper active-nav-link">
+        <a href="contactus.html">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="right-side">
+      <div class="brand" id="brand">IDO GOLDSHTIEN</div>
+        <script>
+          document.getElementById("brand").addEventListener("mouseover", mouseOver);
+          document.getElementById("brand").addEventListener("mouseout", mouseOut);
+            
+          function mouseOver() {
+            document.getElementById("brand").style.color = "black";
+          }
+
+          function mouseOut () {
+            document.getElementById("brand").style.color = "lightseagreen";
+          }
+        </script>
+    </div>
+  </div>
+<!----------NAVIGATION BAR-------------------------------------------------------------->
+
+<!----------LEFT SIDE IMAGE------------------------------------------------------------->
+  <div class="content-wrapper">
+    <div class="two-column-wrapper">
+      <div class="profile-image-wrapper">
+        <img src="images/ContactUs.jpg">
+      </div>
+<!----------LEFT SIDE IMAGE------------------------------------------------------------->
+
+<!----------RIGHT SIDE "CONTACT US" FORM------------------------------------------------>
+    <div class="container">
+      <form>
+        <!----FIRST NAME-------------------------------------------------------------->
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </br>
+        <!----FIRST NAME-------------------------------------------------------------->
+
+        <!----LAST NAME--------------------------------------------------------------->
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </br>
+        <!----LAST NAME--------------------------------------------------------------->
+
+        <!----COUNTRY SELECTOR-------------------------------------------------------->
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="none" selected disabled hidden>Select a Country</option>
+          <option value="israel">Israel</option>
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+          <option value="unitedkingdom">United Kingdom</option>
+          <option value="australia">Australia</option>
+        </select>
+      </br>
+        <!----COUNTRY SELECTOR-------------------------------------------------------->
+
+        <!----FREE TEXT BOX----------------------------------------------------------->
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write here.." style="height:100px"></textarea>
+      </br>
+        <!----FREE TEXT BOX----------------------------------------------------------->
+
+        <!----RADIO BUTTONS----------------------------------------------------------->
+        <input type="radio" id="gender" name="gender" value="male" checked="checked">
+        <label for="gender">Male</label>
+        <input type="radio" id="gender" name="gender" value="female">
+        <label for="female">Female</label></br></br>
+        <!----RADIO BUTTONS----------------------------------------------------------->
+
+        <!----CHECKBOXES-------------------------------------------------------------->
+        <input type="checkbox" id="newsletter" name="newsletter" value="newsletter">
+        <label for="newsletter"> Sign up for newsletter?</label></br>
+        <input type="checkbox" id="advisor" name="advisor" value="advisor">
+        <label for="advisor"> Get in touch with a business advisor?</label></br></br>
+        <!----CHECKBOXES-------------------------------------------------------------->
+
+        <!----SUBMIT BUTTON----------------------------------------------------------->
+        <input type="submit"onclick="msgprint()" value="Submit">
+        <input type="reset" value="Reset">
+        <!----SUBMIT BUTTON----------------------------------------------------------->
+      </form>
+    </div>
+<!----------RIGHT SIDE "CONTACT US" FORM------------------------------------------------>
+  </div>
+</div>
+
+</body>
+
+</html>
