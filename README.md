@@ -1,6 +1,6 @@
 # -Generic-name-electronic-goods-store
 # Created By:
-Ido Goldshtein 313597064
+Ido Goldshtein
 # About:
 This site is my first attempt at creating a rudimentary electronic good store website, it shows basic features such as some CSS functions, a "Contact us" form and some button functions.
 # Home page:
